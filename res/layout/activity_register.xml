@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#c149f5"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="LogIn to your account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/username"
+            android:alpha="0"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_singleperson"
+            android:drawableLeft="@drawable/ic_singleperson"
+            android:singleLine="true"
+            android:hint="Enter Your Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:hint="Enter Your Email"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawableStart="@drawable/ic_email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawableStart="@drawable/ic_password"
+            android:inputType="textPassword"
+            android:hint="Enter Your Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/register_button"
+            android:alpha="0"
+            android:text="Register"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:background="#5b0182"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/login_button"
+            android:background="#5b0182"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:textColor="#fff"
+            android:text="Login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/logintoRegister"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Not Registered? Click Here"
+        android:background="#c149f5"
+        android:textColor="#fff"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/registertoLogin"
+        android:layout_below="@id/logintoRegister"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:alpha="0"
+        android:text="Already Registered? Click Here"
+        android:background="#c149f5"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

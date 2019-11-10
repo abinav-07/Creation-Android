@@ -1,0 +1,29 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+></androidx.viewpager.widget.ViewPager>
+    <Button
+        android:id="@+id/backButton"
+        android:text="Back"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"></Button>
+    <Button
+        android:id="@+id/replayButton"
+        android:text="Replay"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dark_background"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@id/toolbar"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".HomeActivity">
+
+        <TextView
+            android:id="@+id/dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.3"
+            android:text="."
+            android:textColor="#fff"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/dot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/title"
+            android:layout_toLeftOf="@id/title"
+            android:layout_marginBottom="100dp"
+            android:alpha="0.3"
+            android:text="."
+            android:textColor="#fff"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/dot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/title"
+            android:layout_toRightOf="@id/title"
+            android:layout_marginBottom="100dp"
+            android:alpha="0.3"
+            android:text="."
+            android:textColor="#fff"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/dot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_toRightOf="@id/title"
+            android:layout_marginTop="50dp"
+            android:alpha="0.3"
+            android:text="."
+            android:textColor="#fff"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/dot5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="50dp"
+            android:layout_toLeftOf="@id/title"
+            android:alpha="0.3"
+            android:text="."
+            android:textColor="#fff"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/dot6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:alpha="0.3"
+            android:text="."
+            android:textColor="#fff"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="Creation"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Swipe Right"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/startbutton"
+            android:onClick="setLocation"
+            android:text="Start"
+            android:alpha="0"
+            android:layout_below="@id/dot4"
+            android:background="@drawable/shape"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"></com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

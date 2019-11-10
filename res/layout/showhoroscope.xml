@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/firstLayout"
+    android:background="#d5f2f7"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/roundImage"
+        android:translationY="-500dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/roundedbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ImageView>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:alpha="1"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+
+        />
+
+
+    <TextView android:id="@+id/horoscopetext"
+
+        android:text="Wait! Decent Internet is Required "
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:alpha="0"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
